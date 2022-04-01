@@ -1,3 +1,4 @@
+cd blog
 git add .
 git commit -m "________"
 git push
