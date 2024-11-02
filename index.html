@@ -4,6 +4,49 @@
         <title> 
             Vansh's blog
         </title>
+    <style>
+        /* Section 1: General Styles */
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* Section 2: Header Styles */
+        h1, h2 {
+            font-family: 'Georgia', serif;
+            transition: color 0.3s ease;
+        }
+        h1:hover, h2:hover {
+            color: #0066cc !important;
+        }
+
+        /* Section 3: Card Styles */
+        .product-card {
+            transition: transform 0.3s ease;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Section 4: Button Styles */
+        .btn {
+            transition: all 0.3s ease;
+        }
+        .btn:hover {
+            background: #0066cc !important;
+            transform: scale(1.05);
+        }
+
+        /* Section 5: Animation Styles */
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+        .product-card {
+            animation: fadeIn 0.5s ease-in;
+        }
+    </style>
     </head>
     <body style="font-size: 20px;">
         <div style="background: linear-gradient(to right, green, cyan, green, cyan); padding: 10px; display: block; border-radius: 30px;">
