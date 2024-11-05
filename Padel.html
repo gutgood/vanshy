@@ -1,0 +1,117 @@
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Padel</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            body {
+                margin: 0;
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                background: linear-gradient(45deg, #1a237e, #0d47a1);
+                color: white;
+            }
+
+            .container {
+                max-width: 1200px;
+                margin: 0 auto;
+                padding: 20px;
+            }
+
+            .sports-grid {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+                gap: 20px;
+                padding: 20px;
+            }
+
+            .sport-card {
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 15px;
+                padding: 20px;
+                text-align: center;
+                transition: transform 0.3s ease;
+            }
+
+            .sport-card:hover {
+                transform: translateY(-5px);
+                background: rgba(255, 255, 255, 0.2);
+            }
+
+            .sport-icon {
+                font-size: 48px;
+                margin-bottom: 15px;
+            }
+
+            .btn {
+                display: inline-block;
+                padding: 10px 20px;
+                background: #00c853;
+                color: white;
+                text-decoration: none;
+                border-radius: 25px;
+                margin-top: 15px;
+                transition: background 0.3s ease;
+            }
+
+            .btn:hover {
+                background: #00e676;
+            }
+
+            @media (max-width: 600px) {
+                .sports-grid {
+                    grid-template-columns: 1fr;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <h1 style="text-align: center; margin: 40px 0;">Sports Hub</h1>
+            
+            <div class="sports-grid">
+                <div class="sport-card">
+                    <div class="sport-icon">⚽</div>
+                    <h2>Soccer</h2>
+                    <p>Live scores, standings, and match schedules</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+
+                <div class="sport-card">
+                    <div class="sport-icon">🏀</div>
+                    <h2>Basketball</h2>
+                    <p>NBA updates, player stats, and game highlights</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+
+                <div class="sport-card">
+                    <div class="sport-icon">🏈</div>
+                    <h2>Football</h2>
+                    <p>NFL coverage, team rankings, and fantasy football</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+
+                <div class="sport-card">
+                    <div class="sport-icon">⚾</div>
+                    <h2>Baseball</h2>
+                    <p>MLB news, scores, and player statistics</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+
+                <div class="sport-card">
+                    <div class="sport-icon">🎾</div>
+                    <h2>Tennis</h2>
+                    <p>Tournament updates, rankings, and match results</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+
+                <div class="sport-card">
+                    <div class="sport-icon">🏒</div>
+                    <h2>Hockey</h2>
+                    <p>NHL coverage, team stats, and game schedules</p>
+                    <a href="#" class="btn">View Details</a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
