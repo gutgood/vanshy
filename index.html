@@ -7,9 +7,13 @@
         <script>
             function throwConfetti(callback) {
                 confetti({
-                    particleCount: 100,
-                    spread: 70,
-                    origin: { y: 0.6 }
+                    particleCount: 300,
+                    spread: 160,
+                    origin: { y: 0.6 },
+                    colors: ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff'],
+                    startVelocity: 30,
+                    gravity: 0.5,
+                    ticks: 200
                 });
                 setTimeout(callback, 1000); // Wait for confetti to finish
             }
