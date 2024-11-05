@@ -7,13 +7,16 @@
         <script>
             function throwConfetti(callback) {
                 confetti({
-                    particleCount: 300,
-                    spread: 160,
-                    origin: { y: 0.6 },
-                    colors: ['#ff0000', '#00ff00', '#0000ff', '#ffff00', '#ff00ff'],
-                    startVelocity: 30,
-                    gravity: 0.5,
-                    ticks: 200
+                    particleCount: 500,
+                    spread: 180,
+                    origin: { y: 0.8 },
+                    colors: ['#FF69B4', '#FFD700', '#00CED1', '#FF4500', '#9370DB', '#32CD32'],
+                    startVelocity: 45,
+                    gravity: 0.8,
+                    ticks: 300,
+                    shapes: ['star', 'circle'],
+                    scalar: 1.2,
+                    disableForReducedMotion: true
                 });
                 setTimeout(callback, 1000); // Wait for confetti to finish
             }
